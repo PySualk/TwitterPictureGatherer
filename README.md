@@ -1,6 +1,6 @@
 # TwitterPictureGatherer
 
-![Screen Shot 1](/screen1.jpg?raw=true "Screen Shot 1")
+
 
 ## What does it do? (Short)
 * Collect data via the Twitter Streaming API
@@ -15,3 +15,9 @@
 ## Used technology stack
 * Backend: Spring Boot, MongoDB, Maven, Twitter Hosebird Client
 * Frontend: AngularJS, Bower, Bootstrap, Bootswatch
+
+## Screenshots
+
+![Screen Shot 1](/screen1.jpg?raw=true "Screen Shot 1")
+![Screen Shot 2](/screen2.jpg?raw=true "Screen Shot 2")
+![Screen Shot 3](/screen3.jpg?raw=true "Screen Shot 3")
