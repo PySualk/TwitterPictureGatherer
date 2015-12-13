@@ -1,0 +1,41 @@
+<div class="page-header">
+	<h1>Twitter Picture Gatherer</h1>
+</div>
+
+<p class="lead">
+	Start and stop the gathering process here. The current status is <b>{{status}}</b>.
+	There are <b>{{totalTweets}} Tweets</b> stored at the database.
+</p>
+
+<div class="btn-group" role="group" aria-label="...">
+
+	<button ng-click="start()" type="button" class="btn btn-default">
+		<i class="fa fa-play"></i> Start Gathering Tweets
+	</button>
+
+	<button ng-click="stop()" type="button" class="btn btn-default"
+		style="margin-left: 5px;">
+		<i class="fa fa-stop"></i> Stop Gathering
+	</button>
+
+</div>
+
+<div class="page-header">
+	<h3>Getting Started</h3>
+</div>
+
+<p class="lead">
+<ol>
+	<li>As a first step please open the file <code>application.properties</code> and modify your configuration here.</li>
+	<li>Configure your MongoDB connection by entering hostname and port and optionally username and password.</li>
+	<li>Configure the local directory where the pictures are being stored (the application only gatheres tweets with pictures).</li>
+	<li>Enter your consumer key, consumer secret, access token and access secret obtained from Twitter. If you did not have them yet
+	register with your Twitter account at <a href="https://dev.twitter.com/" target="_blank">https://dev.twitter.com/</a>.</li>
+	<li>Now you are able to build a standalone jar file with your configuration by running <code>mvn clean install</code> or simply
+	run the application with <code>mvn spring-boot:run</code></li>
+	<li>Define some jobs, so the application is able to gather some data from Twitter for you.</li>
+	<li>By pressing <code>Start Gathering Tweets</code> the application starts collecting Tweets from the Twitter Streaming API. 
+	All Tweets that match your defined jobs are being stored at the MongoDB database. The corresponding pictures are being stored
+	at the local directory you defined earlier.</li>
+</ol>  
+</p>

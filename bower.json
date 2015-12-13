@@ -1,0 +1,26 @@
+{
+  "name": "TwitterPictureGatherer",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#~1.4.7",
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.5",
+    "angular-route": "~1.4.7",
+    "angular-bootstrap": "~0.14.1",
+    "angular-formly": "~7.2.1",
+    "angular-formly-templates-bootstrap": "~6.1.5"
+  }
+}

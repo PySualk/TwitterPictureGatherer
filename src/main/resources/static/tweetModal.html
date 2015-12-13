@@ -1,0 +1,56 @@
+<div class="modal-header">
+	<h3>Display Tweet</h3>
+</div>
+
+<form>
+
+	<div class="modal-body">
+
+		<div class="media">
+			<div class="media-left">
+				<a href=""> <img class="media-object img-thumbnail"
+					src="{{tweet.filename}}" width="300px">
+				</a>
+			</div>
+			<div class="media-body">
+				<h4 class="media-heading"></h4>
+
+				<table class="table table-striped">
+
+					<tr>
+						<td>Id</td>
+						<td>{{tweet.tweetId}}</td>
+					</tr>
+					<tr>
+						<td>Date</td>
+						<td>{{tweet.timestamp | date:'yyyy/MM/dd HH:mm:ss'}}</td>
+					</tr>
+					<tr>
+						<td>Direct Link to Picture</td>
+						<td><a href="{{tweet.pictureUrl}}" target="_blank">{{tweet.pictureUrl}}</a></td>
+					</tr>
+					<tr>
+						<td>Language</td>
+						<td>{{tweet.lang}}</td>
+					</tr>
+					<tr>
+						<td>Text</td>
+						<td>{{tweet.text}}</td>
+					</tr>
+					<tr>
+						<td>User</td>
+						<td><a href="http://www.twitter.com/{{tweet.screenName}}"
+							target="_blank">{{tweet.screenName}}</a></td>
+					</tr>
+
+				</table>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="modal-footer">
+		<button type="submit" class="btn btn-default" ng-click="close()">Close</button>
+	</div>
+
+</form>

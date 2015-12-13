@@ -1,0 +1,19 @@
+<div class="modal-header">
+	<h3>Edit Job</h3>
+</div>
+
+<form>
+
+	<div class="modal-body">
+
+		<formly-form model="newJob" fields="newJobFields"> </formly-form>
+
+	</div>
+
+	<div class="modal-footer">
+		<button type="submit" class="btn btn-default"
+			ng-click="createJob(newJob)">Save</button>
+		<button type="submit" class="btn btn-default" ng-click="cancel()">Cancel</button>
+	</div>
+
+</form>

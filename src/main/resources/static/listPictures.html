@@ -1,0 +1,36 @@
+<div class="page-header">
+	<h2>Pictures</h2>
+</div>
+
+<div class="lead" ng-if="totalElements == 0">There are currently <b>NO Tweets</b> stored at the
+	database.</div>
+
+<div ng-if="totalElements > 0">
+
+	<nav>
+		<ul class="pager">
+			<li><a ng-click="previousPage()">Newer</a></li>
+			<li><a ng-click="nextPage()">Older</a></li>
+		</ul>
+	</nav>
+
+	<div class="row">
+		<div ng-repeat="item in tweets">
+			<div class="col-xs-2 media">
+				<a href="" ng-click="showTweet('lg', item)"> <img
+					class="img-responsive img-thumbnail media-object"
+					ng-src="{{item.filename}}" style="width: 200px; height: 150px;" />
+				</a>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="container pull-right">{{totalElements}} Tweets in
+		Database</div>
+
+</div>
+
+

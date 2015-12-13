@@ -1,0 +1,35 @@
+<div class="page-header">
+	<h1>List of Jobs</h1>
+</div>
+
+<p class="lead">Define your jobs here. The chosen keywords will be
+	tracked using the Twitter Streaming API. Start and End define the range
+	while the keywords will be tracked.</p>
+
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th class="col-md-2">Name</th>
+			<th class="col-md-4">Description</th>
+			<th class="col-md-4">Keywords</th>
+			<th class="col-md-1">Start</th>
+			<th class="col-md-1">End</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="item in jobs">
+			<td>{{item.name}}</td>
+			<td>{{item.description}}</td>
+			<td><span ng-repeat="keyword in item.keywords track by $index"
+				class="label label-primary" style="margin-left: 3px;">{{keyword}}</span></td>
+			<td>{{item.validFrom | date}}</td>
+			<td>{{item.validTo | date}}</td>
+			<td><a href="" alt="Delete Job"><i
+					ng-click="deleteJob(item, $index)" class="fa fa-trash-o"></i> </a></td>
+		</tr>
+	</tbody>
+</table>
+
+<button ng-click="createJob('md')" type="button"
+	class="btn btn-default pull-right">Add Job</button>
