@@ -1,4 +1,4 @@
-package twitterpicturegatherer.entities;
+package org.sualk.twitterpicturegatherer.entities;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;

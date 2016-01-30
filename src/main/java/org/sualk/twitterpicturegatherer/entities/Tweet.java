@@ -1,4 +1,4 @@
-package twitterpicturegatherer.entities;
+package org.sualk.twitterpicturegatherer.entities;
 
 import java.util.Date;
 

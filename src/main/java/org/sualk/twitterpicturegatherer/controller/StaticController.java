@@ -1,4 +1,4 @@
-package twitterpicturegatherer.controller;
+package org.sualk.twitterpicturegatherer.controller;
 
 import org.springframework.stereotype.Controller;
 

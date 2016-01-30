@@ -1,4 +1,4 @@
-package twitterpicturegatherer.services;
+package org.sualk.twitterpicturegatherer.services;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,6 +12,9 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
+import org.sualk.twitterpicturegatherer.entities.Job;
+import org.sualk.twitterpicturegatherer.entities.JobRepository;
+import org.sualk.twitterpicturegatherer.entities.TweetRepository;
 
 import com.twitter.hbc.ClientBuilder;
 import com.twitter.hbc.core.Constants;
@@ -23,9 +26,6 @@ import com.twitter.hbc.httpclient.auth.OAuth1;
 import com.twitter.hbc.twitter4j.Twitter4jStatusClient;
 
 import twitter4j.StatusListener;
-import twitterpicturegatherer.entities.Job;
-import twitterpicturegatherer.entities.JobRepository;
-import twitterpicturegatherer.entities.TweetRepository;
 
 @Service
 public class CollectorService {

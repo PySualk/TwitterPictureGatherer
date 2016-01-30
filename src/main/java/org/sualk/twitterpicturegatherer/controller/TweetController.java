@@ -1,12 +1,11 @@
-package twitterpicturegatherer.controller;
+package org.sualk.twitterpicturegatherer.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-
-import twitterpicturegatherer.services.CollectorService;
-import twitterpicturegatherer.services.CollectorStatus;
+import org.sualk.twitterpicturegatherer.services.CollectorService;
+import org.sualk.twitterpicturegatherer.services.CollectorStatus;
 
 @RestController
 @RequestMapping("/api")

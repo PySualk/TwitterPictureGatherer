@@ -1,4 +1,4 @@
-package twitterpicturegatherer;
+package org.sualk.twitterpicturegatherer;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.AutoConfigureAfter;

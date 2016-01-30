@@ -1,4 +1,4 @@
-package twitterpicturegatherer.services;
+package org.sualk.twitterpicturegatherer.services;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -19,6 +19,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
+import org.sualk.twitterpicturegatherer.entities.Tweet;
+import org.sualk.twitterpicturegatherer.entities.TweetRepository;
 
 import com.twitter.hbc.twitter4j.handler.StatusStreamHandler;
 import com.twitter.hbc.twitter4j.message.DisconnectMessage;
@@ -29,8 +31,6 @@ import twitter4j.StallWarning;
 import twitter4j.Status;
 import twitter4j.StatusDeletionNotice;
 import twitter4j.StatusListener;
-import twitterpicturegatherer.entities.Tweet;
-import twitterpicturegatherer.entities.TweetRepository;
 
 @Service
 public class StatusStreamHandlerService {
